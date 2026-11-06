@@ -17,4 +17,24 @@ export const SAMPLE_COMPOUNDS = [
     pmid: "PMID: 17569207",
     doi: "10.1021/jm070273+"
   },
+  
+  {
+    id: "NAT-002",
+    name: "Resveratrol",
+    formula: "C14H12O3",
+    mw: 228.24,
+    smiles: "Oc1ccc(\\C=C\\c2cc(O)cc(O)c2)cc1",
+    plant: "Vitis vinifera",
+    family: "Vitaceae",
+    activities: ["Sirtuin activator", "Cardioprotective", "Longevity"],
+    target: "SIRT1",
+    logp: 3.1,
+    tpsa: 60.7,
+    hbd: 3,
+    hba: 3,
+    rotb: 2,
+    pmid: "PMID: 14504319",
+    doi: "10.1038/nature01960"
+  },
+
 ];
