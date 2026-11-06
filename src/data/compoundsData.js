@@ -37,4 +37,23 @@ export const SAMPLE_COMPOUNDS = [
     doi: "10.1038/nature01960"
   },
 
+  {
+    id: "NAT-003",
+    name: "Artemisinin",
+    formula: "C15H22O5",
+    mw: 282.33,
+    smiles: "CC1CCC2C(C)(C1)C3CCC4(C)OO C23OO4",
+    plant: "Artemisia annua",
+    family: "Asteraceae",
+    activities: ["Antimalarial", "Anticancer activity"],
+    target: "PfATP6",
+    logp: 2.9,
+    tpsa: 53.9,
+    hbd: 0,
+    hba: 5,
+    rotb: 0,
+    pmid: "PMID: 26568249",
+    doi: "10.1038/nature15744"
+  }
+
 ];
