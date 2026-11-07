@@ -31,6 +31,33 @@ export function KnowledgeGraph() {
       </div>
 
       {/* Database */}
+      <div className="border border-emerald-800/40 bg-[#061714] p-6 rounded-xl">
+        <h3 className="text-lg font-bold text-emerald-400 mb-4">Baza e Komponimeve Fitokimike</h3>
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-xs text-slate-300">
+            <thead className="bg-[#030908] text-emerald-400 uppercase">
+              <tr>
+                <th className="p-3">Emri</th>
+                <th className="p-3">Formula</th>
+                <th className="p-3">Bima</th>
+                <th className="p-3">Veprimi Biologjik</th>
+                <th className="p-3">PMID</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-emerald-900/30">
+              {SAMPLE_COMPOUNDS.map(c => (
+                <tr key={c.id} className="hover:bg-emerald-950/20">
+                  <td className="p-3 font-bold text-white">{c.name}</td>
+                  <td className="p-3 font-mono text-emerald-300">{c.formula}</td>
+                  <td className="p-3 italic">{c.plant}</td>
+                  <td className="p-3">{c.activities.join(', ')}</td>
+                  <td className="p-3 font-mono text-xs text-emerald-400">{c.pmid}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
       
     </div>
   );
